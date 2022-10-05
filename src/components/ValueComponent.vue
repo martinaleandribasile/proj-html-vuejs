@@ -53,6 +53,7 @@ export default {
             flex-direction: row;
             flex-wrap: wrap;
             row-gap: 50px;
+           
             .values{
                 height: 350px;
                 display: flex;
