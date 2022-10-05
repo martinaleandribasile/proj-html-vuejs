@@ -13,7 +13,7 @@
 </template>
 
 <script>
-  import NavbarComponent from '@/components/NavbarComponent.vue'
+  import NavbarComponent from '@/components/HeaderComponentFile/NavbarComponent.vue'
 export default {
   name: "HeaderComponent",
   components: {

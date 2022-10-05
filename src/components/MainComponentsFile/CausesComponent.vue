@@ -1,10 +1,10 @@
 <template>
  <div id="CAUSES">
-    <div class="value-container">
-        <div class="value-intestation">
+    <div class="component-container">
+        <div class="intestation">
             <h4>RECENT CAUSES</h4>
             <div class="line-warning"></div>
-            <span>We run projects in over 30 countries in 5 continents</span>
+            <span class="font-20">We run projects in over 30 countries in 5 continents</span>
         </div>
         <div class="box-img">
             <div v-for="img in listimg" :key="img.urlimg">
@@ -28,31 +28,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    .value-container{
-        padding: 100px 0;
-        margin: 0 80px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        .value-intestation{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            row-gap: 30px;
-            .line-warning{
-                width: 180px;
-                height: 5px;
-                background-color: #fcd66c;
-            }
-            h4{
-                font-size: 40px;
-                font-weight: normal;
-            }
-            span{
-                font-size: 20px;
-            }
-        }
+    .component-container{
         .box-img{
             margin-top: 100px;
             display: flex;
@@ -70,6 +46,9 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
+        &:hover{
+            background-color: #f7716c; 
+        }
     }
 
 </style>

@@ -42,11 +42,6 @@ export default {
         font-size: 20px;
         font-weight: lighter;
     }
-    .line-warning{
-        width: 180px;
-        height: 5px;
-        background-color: #fcd66c;
-    }
     .values-box{
             margin-top: 150px;
             display: flex;
