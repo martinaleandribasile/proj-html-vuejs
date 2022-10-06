@@ -1,6 +1,6 @@
 <template>
  <div class="header">
-  <NavbarComponent/>
+  <NavbarComponent :linkNavbar="linkNavbar"/>
   <div class="box-header">
     <h1 class="header-title">MAKE A DIFFERENCE</h1>
     <p class="sub-title">As long as poverty, injustice & inequality persist, none of us can truly rest</p>
@@ -13,9 +13,15 @@
 </template>
 
 <script>
+  import { linkNavbar } from '@/filesData/linkNavbar.js';
   import NavbarComponent from '@/components/HeaderComponentFile/NavbarComponent.vue'
 export default {
   name: "HeaderComponent",
+  data(){
+    return{
+      linkNavbar,
+    }
+  },
   components: {
     NavbarComponent
   }

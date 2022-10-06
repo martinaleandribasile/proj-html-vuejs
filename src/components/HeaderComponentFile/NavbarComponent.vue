@@ -14,31 +14,8 @@
 <script>
 export default {
 name: 'NavbarComponent',
-data(){
-    return{
-        linkNavbar:[
-            {
-                name:'HOME',
-                link:'#',
-                active:true
-            },
-            {
-                name:'MISSION',
-                link:'#',
-                active:false
-            },
-            {
-                name:'CAUSES',
-                link:'#',
-                active:false
-            },
-            {
-                name:'JOURNAL',
-                link:'#',
-                active:false
-            }
-        ]
-    }
+props:{
+    linkNavbar:Array
 },
 methods:{
     changeActiveLink(i){
