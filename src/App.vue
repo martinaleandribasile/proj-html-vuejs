@@ -21,16 +21,16 @@ export default {
 </script>
 
 <style lang="scss">
-button{
-  text-transform: uppercase!important;
-  border-radius: 0!important;
-  padding-left: 20px!important;
-  padding-right: 20px!important;
-}
-.line-warning{
-  width: 180px;
-  height: 5px;
-  background-color: #fcd66c;
+  button{
+    text-transform: uppercase!important;
+    border-radius: 0!important;
+    padding-left: 20px!important;
+    padding-right: 20px!important;
+  }
+  .line-warning{
+    width: 180px;
+    height: 5px;
+    background-color: #fcd66c;
   }
   .font-20{
     font-size: 20px;

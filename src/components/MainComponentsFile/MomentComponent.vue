@@ -13,7 +13,7 @@
            <div v-for="component in info "  :key="component.text" >
                 <div class="statistic" >
                 <i :class="component.icon"></i>
-                <span>{{component.number}}</span>
+                <span >{{component.number}} <span v-if="component.numberText">{{component.numberText}}</span></span>
                 </div>
                 <p>{{component.text}}</p>
            </div>
@@ -41,7 +41,8 @@ export default {
                 {
                     icon: "fa-solid fa-dollar-sign",
                     text:'Donate',
-                    number: '3.8M',
+                    number: 3.8,
+                    numberText:'M',
                 },
             ]
         }
@@ -50,14 +51,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    @import '@/style/Variables-Color.scss';
+    @mixin dis-flex-col{
+        display: flex;
+        flex-direction: column;
+    }
     .moments-container{
         display: flex;
         flex-direction: row;
         .moments-par{
             width: 65%;
             margin-left: 80px;
-            display: flex;
-            flex-direction: column;
+           @include dis-flex-col;
             padding: 5% 10% 5% 0;
             row-gap: 20px;
             .moment-title{
@@ -68,11 +73,11 @@ export default {
                 word-spacing: 0.3rem;
             }
             p{
-                color: #78787b;
+                color: $dark-grey;
             }
             .line-warning{
                 height: 5px;
-                background-color: #fcd66c;
+                background-color: $ocra;
             }
         }
         .moments-statisctics{
@@ -80,12 +85,11 @@ export default {
             background-size: 100%;
             background-position: center;
             background-repeat: repeat;
-            display: flex;
-            flex-direction: column;
+            @include dis-flex-col;
             align-items: center;
             justify-content: space-evenly;
             width: 35%;
-            color: white;
+            color: $white;
             .statistic{
                 font-size: 40px;
                 display: flex;

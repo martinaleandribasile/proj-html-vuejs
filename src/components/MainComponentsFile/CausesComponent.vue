@@ -28,6 +28,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    @import '@/style/Variables-Color.scss';
     .component-container{
         .box-img{
             margin-top: 100px;
@@ -40,14 +41,14 @@ export default {
     .red-cause-view-all{
         cursor: pointer;
         padding: 50px 0 50px 0;
-        background-color: #ed6864;
-        color: white;
+        background-color: $burt-sienna;
+        color: $white;
         text-transform: uppercase;
         display: flex;
         justify-content: center;
         align-items: center;
         &:hover{
-            background-color: #f7716c; 
+            background-color: $burt-sienna-light; 
         }
     }
 

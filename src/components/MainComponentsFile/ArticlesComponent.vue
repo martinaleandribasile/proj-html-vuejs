@@ -42,36 +42,43 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    @import "@/style/Variables-Color.scss";
+    @mixin dis-flex-row{
+        display: flex;
+        flex-direction: row;
+    }
+    @mixin dis-flex-col{
+        display: flex;
+        flex-direction: column;
+    }
     span{
-        color: #78787b;
+        color: $dark-grey;
     }
     .component-container{
         row-gap: 60px;
         .box-articles{
-            display: flex;
-            flex-direction: row;
+            @include dis-flex-row;
             justify-content: space-between;
             width: 80%;
             margin: 0 auto;
             .button-articles{
                 border: 0;
                 font-size: 20px;
-                color: white;
-                background-color: #ed6864;
+                color: $white;
+                background-color: $burt-sienna;
                 &:hover{
-                    background-color: #f7716c;
+                    background-color: $burt-sienna-light;
                 }
             }
             .left-box{
-                border: 1px solid #e8e8e8;
+                border: 1px solid $light-grey;
                 height: 650px;
                 width: 50%;
                 padding-bottom: 10px;
-                display: flex;
-                flex-direction: column;
+                @include dis-flex-col;
                 row-gap: 20px;
                 .text-color{
-                    color: #fcd66c;
+                    color: $ocra;
                     font-weight: normal;
                     font-size: 25px;
                 }
@@ -80,17 +87,15 @@ export default {
                 height: 650px;
                 width: 45%;
                 padding-bottom: 10px;
-                display: flex;
-                flex-direction: column;
+                @include dis-flex-col;
                 row-gap: 10px;
                 .card-article{
                     height: calc(100% / 4);
-                    display: flex;
-                    flex-direction: row;
+                    @include dis-flex-row;
                     .card-text{
                         padding-left: 20px;
                         h5{
-                            color: #fcd66c;
+                            color: $ocra;
                         }
                     }
                 } 

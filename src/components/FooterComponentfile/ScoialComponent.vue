@@ -19,20 +19,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    @import '@/style/Variables-Color.scss';
     .bg-color{
-        background-color: #e7e7e9;
+        background-color: $light-grey;
         .copyright{
-            color: #ababab;
+            color: $medium-grey;
             font-size: 10px;
         }
         .icons-social{
             display: flex;
             column-gap: 15px;
             a{
-                color: #fcd66c;
+                color: $ocra;
                 .icona{
                 padding: 10px;
-                background-color: white;
+                background-color: $white;
                 border-radius: 50%;
                 font-size: 30px;
                 }

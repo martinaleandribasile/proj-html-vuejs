@@ -24,16 +24,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    @import '@/style/Variables-Color.scss';
+    @mixin dis-flex-col-acenter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 .value-container{
-    color: white;
+    color: $white;
     padding: 150px 80px;
     min-height: 800px;
     background-position-y: center;
     background-image: url(@/assets/img/home-content-bg-2.jpg);
-    display: flex;
-    flex-direction: column;
+    @include dis-flex-col-acenter;
     row-gap: 20px;
-    align-items: center;
+    
     h4{
         font-size: 40px;
         font-weight: normal;
@@ -51,14 +56,12 @@ export default {
            
             .values{
                 height: 350px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                @include dis-flex-col-acenter;
                 justify-content: space-between;
                 width: calc(100% / 4 - 20px);
                 margin: 0 10px;
                 .icon{
-                    color:#fcd66c;
+                    color:$ocra;
                     font-size: 70px;
                 }
                 h5{
