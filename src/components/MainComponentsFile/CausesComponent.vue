@@ -7,8 +7,8 @@
             <span class="font-20">We run projects in over 30 countries in 5 continents</span>
         </div>
         <div class="box-img">
-            <div v-for="img in listimg" :key="img.urlimg">
-                <img :src='require(`@/assets/img/${img.urlimg}`)' :alt="img.text">
+            <div class="sizeboximg" v-for="img in listimg" :key="img.urlimg">
+                <img class="img-fluid" :src='require(`@/assets/img/${img.urlimg}`)' :alt="img.text">
             </div>
         </div>
     </div>
@@ -35,6 +35,9 @@ export default {
             display: flex;
             justify-content: space-between;
             width: 100%;
+            .sizeboximg{
+                width: calc(100% / 4);
+            }
         }
         
     }
