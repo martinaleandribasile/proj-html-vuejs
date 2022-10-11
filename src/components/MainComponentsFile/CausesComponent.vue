@@ -35,9 +35,6 @@ export default {
             display: flex;
             justify-content: space-between;
             width: 100%;
-            .sizeboximg{
-                width: calc(100% / 4);
-            }
         }
         
     }
