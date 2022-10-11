@@ -35,6 +35,8 @@ export default {
     padding: 150px 80px;
     min-height: 800px;
     background-position-y: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-image: url(@/assets/img/home-content-bg-2.jpg);
     @include dis-flex-col-acenter;
     row-gap: 20px;
